@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MontyHallv2", "MontyHallv2\MontyHallv2.csproj", "{70B75A0F-0C18-4842-A6C3-32F71F37C6ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70B75A0F-0C18-4842-A6C3-32F71F37C6ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70B75A0F-0C18-4842-A6C3-32F71F37C6ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70B75A0F-0C18-4842-A6C3-32F71F37C6ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70B75A0F-0C18-4842-A6C3-32F71F37C6ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
