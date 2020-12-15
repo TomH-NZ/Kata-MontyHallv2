@@ -17,7 +17,16 @@ namespace MontyHallv2UnitTests.DoorTests
             //Assert
             Assert.Equal(3, actual);
         }
-        
-        
+
+        [Fact]
+        public void ReturnARandomDoorWhenCalled()
+        {
+            //Arrange
+            
+            //Act
+            
+            //Assert
+            
+        }
     }
 }
