@@ -2,5 +2,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7cc3ad25_002D9ce5_002D4f51_002Db3d8_002Dd20692a2bcb1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GenerateThreeDoorsForTheGame" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::F41076C8-2826-4EE0-881E-4B5A9B8B1E67::.NETCoreApp,Version=v3.1::MontyHallv2UnitTests.DoorTests.DoorTestsShould.GenerateThreeDoorsForTheGame&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F41076C8-2826-4EE0-881E-4B5A9B8B1E67::.NETCoreApp,Version=v3.1::MontyHallv2UnitTests.DoorTests.DoorTestsShould.ReturnSeriousPrizeAfterUpdatingDictionary&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::F41076C8-2826-4EE0-881E-4B5A9B8B1E67::.NETCoreApp,Version=v3.1::MontyHallv2UnitTests.ValidationTests.ValidationTestsShould.ConfirmTheUserInputDoorIsValid&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

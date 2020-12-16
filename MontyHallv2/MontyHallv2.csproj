@@ -7,7 +7,6 @@
 
     <ItemGroup>
       <Folder Include="Door" />
-      <Folder Include="Validation" />
     </ItemGroup>
 
 </Project>
