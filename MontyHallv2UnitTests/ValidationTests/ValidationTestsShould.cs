@@ -11,10 +11,10 @@ namespace MontyHallv2UnitTests.ValidationTests
         public void ConfirmTheUserInputDoorIsValid()
         {
             //Arrange
-            var userInput = Doors.three;
+            var userSelection = Doors.three;
             
             //Act
-            var result = InputValidation.UserInputValidation(userInput);
+            var result = Validation.UserInput(userSelection);
 
             //Assert
             Assert.True(result);
