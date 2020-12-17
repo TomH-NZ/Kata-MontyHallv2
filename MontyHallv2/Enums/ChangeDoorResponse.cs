@@ -1,6 +1,6 @@
 namespace MontyHallv2.Enums
 {
-    public enum ChangeDoor
+    public enum ChangeDoorOption
     {
         yes,
         no

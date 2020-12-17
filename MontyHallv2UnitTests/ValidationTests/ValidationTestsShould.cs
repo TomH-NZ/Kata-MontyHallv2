@@ -19,5 +19,18 @@ namespace MontyHallv2UnitTests.ValidationTests
             //Assert
             Assert.True(result);
         }
+        
+        [Fact]
+        public void ValidateUserChangeDoorInput()
+        {
+            //Arrange
+            var userInput = ChangeDoorOption.no;
+
+            //Act
+            var result = Validation.ChangeDoorInput(userInput);
+
+            //Assert
+            Assert.True(result);
+        }
     }
 }

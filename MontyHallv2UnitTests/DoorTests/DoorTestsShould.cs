@@ -19,10 +19,10 @@ namespace MontyHallv2UnitTests.DoorTests
         public void GenerateThreeDoorsForTheGame()
         {
             //Arrange
-            var game = new MontyHallGame();
+            var game = new Storage();
             
             //Act
-            var actual = game.Storage.PrizeStorage.Count;
+            var actual = game.PrizeStorage.Count;
             
             //Assert
             Assert.Equal(3, actual);
@@ -46,13 +46,28 @@ namespace MontyHallv2UnitTests.DoorTests
         public void DisplayJokePrizeForAnnouncersDoor()
         {
             //Arrange
-            var game = new MontyHallGame();
+            var game = new Storage();
 
             //Act
-            var result = AnnouncersDoor.AnnouncersSelection(Doors.one, game.Storage.PrizeStorage);
+            var result = AnnouncersDoor.AnnouncersSelection(Doors.one, game.PrizeStorage);
 
             //Assert
-            Assert.Equal("joke", game.Storage.PrizeStorage[result]);
+            Assert.Equal("joke", game.PrizeStorage[result]);
+        }
+
+        [Fact]
+        public void ReturnNewDoorWhenPlayerChangesSelection()
+        {
+            //Arrange
+            var game = new MontyHallGame();
+            var playerSelection = Doors.one;
+            var announcersSelectedDoor = Doors.two;
+
+            //Act
+            var result = ChangeDoor.NewUserSelection(playerSelection, announcersSelectedDoor);
+
+            //Assert
+            Assert.Equal(Doors.three, result);
         }
     }
 }

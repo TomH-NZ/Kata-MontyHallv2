@@ -9,5 +9,10 @@ namespace MontyHallv2.ValidationProcesses
         {
             return Enum.IsDefined(typeof(Doors), userSelection);
         }
+
+        public static bool ChangeDoorInput(ChangeDoorOption userInput)
+        {
+            return Enum.IsDefined((typeof(ChangeDoorOption)), userInput);
+        }
     }
 }

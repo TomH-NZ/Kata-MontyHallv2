@@ -1,24 +1,24 @@
 using System;
-using System.Collections.Generic;
 using MontyHallv2.Enums;
 
 namespace MontyHallv2.Door
 {
-    public static class AnnouncersDoor
+    public class ChangeDoor
     {
-        public static Doors AnnouncersSelection(Doors userSelection, Dictionary<Doors, string> montyHallPrizes)
+        public static Doors NewUserSelection(Doors playerSelection, Doors announcerSelection)
         {
             Doors? output = null;
-            
+
             foreach (Doors entry in Enum.GetValues(typeof(Doors)))
             {
-                if (entry != userSelection || montyHallPrizes[entry] != "serious")
+                if (entry != playerSelection && entry != announcerSelection)
                 {
                     output = entry;
                 }
             }
 
             return output.Value;
+            //return Doors.three;
         }
     }
 }
