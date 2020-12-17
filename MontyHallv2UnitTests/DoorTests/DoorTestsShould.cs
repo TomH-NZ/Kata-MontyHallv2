@@ -22,7 +22,7 @@ namespace MontyHallv2UnitTests.DoorTests
             var game = new MontyHallGame();
             
             //Act
-            var actual = game.PrizeStorage.Count;
+            var actual = game.Storage.PrizeStorage.Count;
             
             //Assert
             Assert.Equal(3, actual);
@@ -38,7 +38,7 @@ namespace MontyHallv2UnitTests.DoorTests
             game.UpdatePrizeLocation(new StubForRandomDoorOne());
 
             //Assert
-            Assert.Equal("serious", game.PrizeStorage[Doors.one]);
+            Assert.Equal("serious", game.Storage.PrizeStorage[Doors.one]);
 
         }
 
@@ -49,10 +49,10 @@ namespace MontyHallv2UnitTests.DoorTests
             var game = new MontyHallGame();
 
             //Act
-            var result = AnnouncersDoor.AnnouncersSelection(Doors.one, game.PrizeStorage);
+            var result = AnnouncersDoor.AnnouncersSelection(Doors.one, game.Storage.PrizeStorage);
 
             //Assert
-            Assert.Equal("joke", game.PrizeStorage[result]);
+            Assert.Equal("joke", game.Storage.PrizeStorage[result]);
         }
     }
 }

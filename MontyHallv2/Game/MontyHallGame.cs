@@ -7,21 +7,18 @@ namespace MontyHallv2.Game
     {
         public MontyHallGame()
         {
-            
+            _storage = new Storage();
         }
-        
-        public Dictionary<Doors, string>PrizeStorage = new Dictionary<Doors, string>
-        {
-            {Doors.one, "joke"},
-            {Doors.two, "joke"},
-            {Doors.three, "joke"}
-        };
+
+        private readonly Storage _storage;
+
+        public Storage Storage => _storage;
 
         public void UpdatePrizeLocation(IRandomDoor randomDoor)
         {
             var seriousPrizeLocation = randomDoor.Generator();
-            
-            PrizeStorage[seriousPrizeLocation] = "serious";
+
+            Storage.PrizeStorage[seriousPrizeLocation] = "serious";
         }
     }
 }
