@@ -1,12 +1,11 @@
 using System;
 using MontyHallv2.Enums;
-using MontyHallv2.Game;
 
-namespace MontyHallv2.Validation
+namespace MontyHallv2.ValidationProcesses
 {
     public static class Validation
     {
-        public static bool UserInput(Doors userSelection)
+        public static bool UserDoorSelection(Doors userSelection)
         {
             return Enum.IsDefined(typeof(Doors), userSelection);
         }

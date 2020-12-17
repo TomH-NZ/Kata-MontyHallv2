@@ -1,3 +1,4 @@
+using MontyHallv2.Door;
 using MontyHallv2.Enums;
 using MontyHallv2.Game;
 using Xunit;
@@ -18,7 +19,7 @@ namespace MontyHallv2UnitTests.DoorTests
         public void GenerateThreeDoorsForTheGame()
         {
             //Arrange
-            var game = new MontyHallGame(Doors.one);
+            var game = new MontyHallGame();
             
             //Act
             var actual = game.PrizeStorage.Count;
@@ -31,7 +32,7 @@ namespace MontyHallv2UnitTests.DoorTests
         public void ReturnSeriousPrizeAfterUpdatingDictionary()
         {
             //Arrange
-            var game = new MontyHallGame(Doors.one);
+            var game = new MontyHallGame();
 
             //Act
             game.UpdatePrizeLocation(new StubForRandomDoorOne());
@@ -39,6 +40,19 @@ namespace MontyHallv2UnitTests.DoorTests
             //Assert
             Assert.Equal("serious", game.PrizeStorage[Doors.one]);
 
+        }
+
+        [Fact]
+        public void DisplayJokePrizeForAnnouncersDoor()
+        {
+            //Arrange
+            var game = new MontyHallGame();
+
+            //Act
+            var result = AnnouncersDoor.AnnouncersSelection(Doors.one, game.PrizeStorage);
+
+            //Assert
+            Assert.Equal("joke", game.PrizeStorage[result]);
         }
     }
 }

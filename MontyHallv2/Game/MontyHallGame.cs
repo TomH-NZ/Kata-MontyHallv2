@@ -5,10 +5,9 @@ namespace MontyHallv2.Game
 {
     public class MontyHallGame
     {
-        private Doors PlayerSelection { get; }
-        public MontyHallGame(Doors playerSelection)
+        public MontyHallGame()
         {
-            PlayerSelection = playerSelection;
+            
         }
         
         public Dictionary<Doors, string>PrizeStorage = new Dictionary<Doors, string>
